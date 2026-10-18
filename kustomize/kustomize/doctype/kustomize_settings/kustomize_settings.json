@@ -1,0 +1,68 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "creation": "2026-10-12 14:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "branding_section",
+  "site_name",
+  "slogan",
+  "logo",
+  "favicon",
+  "site_icon"
+ ],
+ "fields": [
+  {
+   "fieldname": "branding_section",
+   "fieldtype": "Section Break",
+   "label": "Site Branding"
+  },
+  {
+   "description": "Public display name for this site. This does not change the site's domain or folder name.",
+   "fieldname": "site_name",
+   "fieldtype": "Data",
+   "label": "Site Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "slogan",
+   "fieldtype": "Small Text",
+   "label": "Slogan"
+  },
+  {
+   "fieldname": "logo",
+   "fieldtype": "Attach Image",
+   "label": "Logo"
+  },
+  {
+   "fieldname": "favicon",
+   "fieldtype": "Attach",
+   "label": "Favicon"
+  },
+  {
+   "description": "Icon for the Helpdesk sidebar and welcome screen.",
+   "fieldname": "site_icon",
+   "fieldtype": "Attach Image",
+   "label": "Site Icon"
+  }
+ ],
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-10-12 14:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Kustomize",
+ "name": "Kustomize Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "read": 1,
+   "role": "System Manager",
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

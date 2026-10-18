@@ -1,0 +1,64 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"kustomize-settings-header\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Site Settings</b></span>\",\"col\":12}},{\"id\":\"kustomize-branding-card\",\"type\":\"card\",\"data\":{\"card_name\":\"Site Branding\",\"col\":6}},{\"id\":\"kustomize-colors-card\",\"type\":\"card\",\"data\":{\"card_name\":\"Site Colors\",\"col\":6}}]",
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "tool",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Kustomize",
+ "links": [
+  {
+   "hidden": 0,
+   "label": "Site Branding",
+   "link_count": 1,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Site Branding",
+   "link_count": 0,
+   "link_to": "Kustomize Settings",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "label": "Site Colors",
+   "link_count": 1,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Site Colors",
+   "link_count": 0,
+   "link_to": "Kustomize Colors",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "module": "Kustomize",
+ "name": "Kustomize",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ],
+ "sequence_id": 40,
+ "shortcuts": [],
+ "title": "Kustomize"
+}

@@ -1,0 +1,22 @@
+/*!
+ * Copyright (c) 2026, UNIVERSITY OF ELDORET and Ngatia Frankline
+ * For license information, please see license.txt
+ */
+
+.btn-primary:hover,
+button.primary:hover,
+[role="button"].primary:hover {
+	background-color: var(--action-hover-color) !important;
+	border-color: var(--action-hover-color) !important;
+}
+
+.btn.btn-secondary {
+	background-color: var(--secondary-color) !important;
+}
+
+.btn-primary,
+button.primary,
+[role="button"].primary {
+	background-color: var(--action-color) !important;
+	border-color: var(--action-color) !important;
+}

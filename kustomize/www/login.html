@@ -1,0 +1,12 @@
+{% extends "frappe/www/login.html" %}
+
+{% block page_content %}
+	{{ super() }}
+
+	{% if kustomize_slogan %}
+		<p class="kustomize-login-slogan">{{ kustomize_slogan }}</p>
+	{% endif %}
+
+
+
+{% endblock %}

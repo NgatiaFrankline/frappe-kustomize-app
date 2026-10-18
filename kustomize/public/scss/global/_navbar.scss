@@ -1,0 +1,33 @@
+/*!
+ * Copyright (c) 2026, UNIVERSITY OF ELDORET and Ngatia Frankline
+ * For license information, please see license.txt
+ */
+
+:root {
+	--navbar-height: 66px;
+
+}
+
+.navbar,
+.navbar-default,
+.navbar-expand {
+	background-color: var(--navbar-bg) !important;
+	height: var(--navbar-height);
+	margin-bottom: 3rem;
+
+	.container {
+		padding: 0 1rem;
+		width: 100% !important;
+		max-width: 100% !important;
+	}//.container
+
+	.navbar-brand.navbar-home {
+		img.app-logo {
+			height: 59px;
+			max-height: 59px;
+			width: auto;
+		}
+	}//.navbar-brand.navbar-home
+
+}//.navbar
+

@@ -1,0 +1,107 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "creation": "2026-10-17 13:10:00.000000",
+ "doctype": "DocType",
+ "field_order": [
+  "colors_section",
+  "primary_color",
+  "brand_color",
+  "secondary_color",
+  "navbar_bg_color",
+  "action_color",
+  "sidebar_selector_color",
+  "sidebar_selector_text_color",
+  "heading_color",
+  "text_color",
+  "link_color",
+  "action_hover_color",
+  "footer_color"
+ ],
+ "fields": [
+  {
+   "fieldname": "colors_section",
+   "fieldtype": "Section Break",
+   "label": "Site Colors"
+  },
+  {
+   "fieldname": "primary_color",
+   "fieldtype": "Color",
+   "label": "Primary Color"
+  },
+  {
+   "fieldname": "brand_color",
+   "fieldtype": "Color",
+   "label": "Brand Color"
+  },
+  {
+   "fieldname": "secondary_color",
+   "fieldtype": "Color",
+   "label": "Secondary Color"
+  },
+  {
+   "fieldname": "navbar_bg_color",
+   "fieldtype": "Color",
+   "label": "Navbar Background Color"
+  },
+  {
+   "fieldname": "action_color",
+   "fieldtype": "Color",
+   "label": "Action Color"
+  },
+  {
+   "fieldname": "sidebar_selector_color",
+   "fieldtype": "Color",
+   "label": "Selected Sidebar Item Color"
+  },
+  {
+   "fieldname": "sidebar_selector_text_color",
+   "fieldtype": "Color",
+   "label": "Selected Sidebar Item Text Color"
+  },
+  {
+   "fieldname": "heading_color",
+   "fieldtype": "Color",
+   "label": "Heading Color"
+  },
+  {
+   "fieldname": "text_color",
+   "fieldtype": "Color",
+   "label": "Text Color"
+  },
+  {
+   "fieldname": "link_color",
+   "fieldtype": "Color",
+   "label": "Link Color"
+  },
+  {
+   "description": "Color used for action buttons and links while hovered.",
+   "fieldname": "action_hover_color",
+   "fieldtype": "Color",
+   "label": "Action Hover Color"
+  },
+  {
+   "fieldname": "footer_color",
+   "fieldtype": "Color",
+   "label": "Footer Background Color"
+  }
+ ],
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-10-17 13:10:00.000000",
+ "modified_by": "Administrator",
+ "module": "Kustomize",
+ "name": "Kustomize Colors",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "read": 1,
+   "role": "System Manager",
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

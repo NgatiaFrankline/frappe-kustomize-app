@@ -1,0 +1,89 @@
+/*!
+ * Copyright (c) 2026, UNIVERSITY OF ELDORET and Ngatia Frankline
+ * For license information, please see license.txt
+ */
+
+:root {
+
+	// Default colors
+	--color-default: #212529;
+	--color-white: #ffffff;
+	--color-black: #000000;
+	--color-text: #222;
+	--color-primary: #660000;
+	--color-secondary: #cc9933;
+	--color-border: #dee2e6;
+	--color-link: #000066;
+
+	// header
+	--color-heading: #000033;
+	--color-bg-heading: #FFFFFF;
+	--color-bg-header: #000033;
+
+	// Action color
+	--color-action: #660000;
+	--color-action-hover: #cc9933;
+	//--color-action-hover: #000033;
+	--color-action-focus: #cc9933;
+	//--color-action-focus: #000033;
+	--color-action-text: #ffffff;
+
+	// Backgrounds
+	--body-bg-color: #FFFFFF;
+	--color-bg-blue: #000033;
+	--color-bg-blue-light: #333399;
+	--color-bg-blue-faint: #6666ff;
+
+	// activity menu
+	--color-activity-menu-bg-color: transparent;
+	--color-activity-menu-link-color: #222222;
+
+	// Colors
+	--color-brand: #000066;
+	--color-blue: #000066;
+	--color-blue-light: #333399;
+	--color-blue-faint: #6666ff;
+
+	--color-brown: #996633;
+	--color-brown-light: #663333;
+
+	--color-gold: #996633;
+	--color-gold-light: #cc9933;
+	--color-gold-faint: rgba(204, 153, 102, 0.68);
+
+	// nav
+	--color-nav-bg: #ffffff;
+	--color-nav-text: #cccccc;
+
+	// footer
+	--color-footer-bg: #000033;
+	--color-footer-text: #cccccc;
+	--color-footer-title: #cccccc;
+
+	// row
+	--color-gold-1: rgba(204,153,51,0.1);
+	--color-gold-3: rgba(204,153,51,0.3);
+	--color-gold-5: rgba(204,153,51,0.5);
+
+
+	// ##############################################################################################
+
+	// Kustomize colors
+	--primary: var(--kustomize-primary-color, var(--color-primary));
+	--primary-color: var(--kustomize-primary-color, var(--color-primary));
+	--brand-color: var(--kustomize-brand-color, var(--color-brand));
+	--secondary: var(--kustomize-secondary-color, var(--color-secondary));
+	--secondary-color: var(--kustomize-secondary-color, var(--color-secondary));
+
+	--navbar-bg: var(--kustomize-navbar-bg-color, var(--color-nav-bg));
+	--btn-primary: var(--kustomize-action-color, var(--color-action));
+	--sidebar-selector-color: var(--kustomize-sidebar-selector-color, var(--color-brand));
+	--sidebar-selector-text-color: var(--kustomize-sidebar-selector-text-color, var(--color-white));
+	--heading-color: var(--kustomize-heading-color, var(--color-heading));
+	--text-color: var(--kustomize-text-color, var(--color-text));
+	--link-color: var(--kustomize-link-color, var(--color-link));
+	--action-color: var(--kustomize-action-color, var(--color-action));
+	--action-hover-color: var(--kustomize-action-hover-color, var(--color-action-hover));
+	--action-text-color: var(--kustomize-action-text-color, var(--color-action-text));
+	--footer-bg-color: var(--kustomize-footer-color, var(--color-footer-bg));
+}

@@ -1,0 +1,33 @@
+$login-bg: #f3f6fa;
+$login-heading: #102a43;
+$login-accent: #2563a6;
+$login-muted: #526579;
+
+body[data-path="login"] {
+	background: $login-bg;
+
+	.for-login {
+		.page-card {
+			max-width: 420px;
+			border: 0;
+			border-radius: 16px;
+			box-shadow: 0 16px 40px rgb(16 42 67 / 14%);
+		}
+
+		.page-card-head h4 {
+			color: $login-heading;
+		}
+
+		.btn-login {
+			background: $login-accent;
+			border-color: $login-accent;
+		}
+	}
+
+	.kustomize-login-slogan {
+		max-width: 420px;
+		margin: 16px auto 0;
+		color: $login-muted;
+		text-align: center;
+	}
+}
