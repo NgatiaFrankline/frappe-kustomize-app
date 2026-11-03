@@ -34,7 +34,7 @@ web_include_js = ["helpdesk_branding.bundle.ts"]
 
 update_website_context = ["kustomize.api.update_website_context"]
 
-after_request = ["kustomize.api.inject_helpdesk_site_icon"]
+after_request = ["kustomize.api.inject_helpdesk_site_icon", "kustomize.api.inject_login_slogan"]
 
 # include custom scss in every website theme (without file extension ".scss")
 

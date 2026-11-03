@@ -1,0 +1,36 @@
+/*!
+ * Copyright (c) 2026, UNIVERSITY OF ELDORET and Ngatia Frankline
+ * For license information, please see license.txt
+ */
+
+
+body[data-path="login"] {
+
+	// !important so Frappe's show_footer_on_login and the global footer styles can't bring them back
+	.navbar,
+	.web-footer {
+		display: none !important;
+	}
+
+	.container {
+
+		.page-header-wrapper,
+		.page_content {
+			width: 100%;
+			margin: 0 auto;
+			max-width: 400px;
+		}
+	}//.container
+
+
+
+
+	.for-login {
+		.page-card {
+			background: transparent;
+			border: 0;
+			box-shadow: none;
+		}//.page-card
+	}//.for-login
+
+}//body[data-path="login"]

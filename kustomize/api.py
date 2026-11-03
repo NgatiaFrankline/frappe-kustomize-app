@@ -2,7 +2,7 @@ import frappe
 from frappe.utils import get_assets_json
 
 
-@frappe.whitelist()
+@frappe.whitelist(allow_guest=True)
 def get_site_icon():
 	settings = frappe.get_single("Kustomize Settings")
 	colors = frappe.get_single("Kustomize Colors")
@@ -58,7 +58,30 @@ def inject_helpdesk_site_icon(response, request):
 	response.set_data(body)
 
 
+def inject_login_slogan(response, request):
+	# A www/login.html child template breaks the parent's logo_section macro scope
+	# (logo and app_name render empty), so the slogan is injected here instead.
+	if request.path != "/login" or response.mimetype != "text/html":
+		return
+
+	slogan = frappe.db.get_single_value("Kustomize Settings", "slogan")
+	body = response.get_data()
+	if not slogan or b"</main>" not in body or b"kustomize-login-slogan" in body:
+		return
+
+	paragraph = f'<p class="kustomize-login-slogan">{frappe.utils.escape_html(slogan)}</p>'.encode()
+	response.set_data(body.replace(b"</main>", paragraph + b"</main>", 1))
+
+
 def update_website_context(context):
-	return {
+	values = {
 		"kustomize_slogan": frappe.db.get_single_value("Kustomize Settings", "slogan") or "",
 	}
+
+	# Runs after login.py's get_context, so this overrides the "Login to {app_name}" heading.
+	if context.get("for_test") == "login.html":
+		login_name = frappe.db.get_single_value("Kustomize Settings", "login_name")
+		if login_name:
+			values["app_name"] = login_name
+
+	return values

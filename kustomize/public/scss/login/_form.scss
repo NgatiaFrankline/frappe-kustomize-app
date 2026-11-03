@@ -1,0 +1,122 @@
+/*!
+ * Copyright (c) 2026, UNIVERSITY OF ELDORET and Ngatia Frankline
+ * For license information, please see license.txt
+ */
+
+
+// Inputs, buttons and links inside the login card
+body[data-path="login"] {
+	.for-login,
+	.for-login-with-email-link {
+
+		.page-card-body {
+			.form-group {
+				margin-bottom: 1rem;
+			}
+
+			.email-field,
+			.password-field {
+				position: relative;
+
+				.form-control {
+					min-height: 3rem;
+					padding: 0.75rem 2.75rem;
+					border: 1px solid var(--border-color, #d9e0e8);
+					border-radius: 0.5rem;
+					background-color: var(--card-bg, #fff);
+					transition:
+						border-color 0.15s ease,
+						box-shadow 0.15s ease;
+
+					&:focus {
+						border-color: var(--primary-color, #2563a6);
+						box-shadow: 0 0 0 3px
+							color-mix(in srgb, var(--primary-color, #2563a6) 16%, transparent);
+					}
+
+					&::placeholder {
+						color: var(--text-muted, #8492a6);
+						opacity: 1;
+					}
+				}
+
+				.field-icon {
+					position: absolute;
+					top: 50%;
+					left: 0.9rem;
+					width: 1rem;
+					height: 1rem;
+					color: var(--text-muted, #8492a6);
+					transform: translateY(-50%);
+					pointer-events: none;
+
+					path {
+						stroke: currentColor;
+					}
+				}
+
+				&:focus-within .field-icon {
+					color: var(--primary-color, #2563a6);
+				}
+			}
+
+			.password-field {
+				.form-control {
+					padding-right: 4rem;
+				}
+
+				.toggle-password {
+					position: absolute;
+					top: 50%;
+					right: 0.9rem;
+					color: var(--text-muted, #6c757d);
+					font-size: 0.8rem;
+					font-weight: 600;
+					transform: translateY(-50%);
+					cursor: pointer;
+					user-select: none;
+
+					&:hover {
+						color: var(--primary-color, #2563a6);
+					}
+				}
+			}
+
+			.forgot-password-message {
+				margin: 0.25rem 0 0;
+				text-align: right;
+
+				a {
+					color: var(--primary-color, #2563a6);
+					font-size: 0.875rem;
+					text-decoration: none;
+
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+		}//.page-card-body
+
+		.page-card-actions {
+			margin-top: 3rem;
+		}//.page-card-actions
+
+		.form-control {
+			&:focus-visible {
+				outline: none;
+			}
+		}//.form-control
+
+		.btn-login {
+			border-radius: 0.5rem;
+			font-weight: 600;
+			padding: 0.75rem 1.5rem;
+		}//.btn-login
+
+		.login-divider {
+			margin: 1rem 0;
+		}//.login-divider
+	}//.for-login, .for-login-with-email-link
+
+}//body[data-path="login"]

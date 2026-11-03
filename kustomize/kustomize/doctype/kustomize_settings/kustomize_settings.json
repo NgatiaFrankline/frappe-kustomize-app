@@ -8,6 +8,7 @@
   "branding_section",
   "site_name",
   "slogan",
+  "login_name",
   "logo",
   "favicon",
   "site_icon"
@@ -29,6 +30,12 @@
    "fieldname": "slogan",
    "fieldtype": "Small Text",
    "label": "Slogan"
+  },
+  {
+   "description": "Shown in the login page heading as \"Login to {name}\". Defaults to the Site Name.",
+   "fieldname": "login_name",
+   "fieldtype": "Data",
+   "label": "Login Page Name"
   },
   {
    "fieldname": "logo",
