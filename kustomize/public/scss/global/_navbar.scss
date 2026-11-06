@@ -29,5 +29,13 @@
 		}
 	}//.navbar-brand.navbar-home
 
+	.navbar-nav {
+		.nav-item {
+			.nav-link {
+				text-transform: capitalize;
+			}
+		}
+	}//.navbar-nav
+
 }//.navbar
 
